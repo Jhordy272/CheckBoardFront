@@ -178,13 +178,13 @@ const Projects = () => {
               <td>{project.serviceLine.name}</td>
               <td>{project.manager.username}</td>
               <td>
-                <button onClick={() => openModal(project)} className="btn btn-primary">Ver detalles</button>
+                <button onClick={() => openModal(project)} className="btn btn-secondary">Ver detalles</button>
               </td>
               <td>
                 <button onClick={() => openModal1(project)} className="btn btn-secondary">Editar</button>
               </td>
               <td>
-                <button onClick={() => navigate("/Management")}>Ir a nueva ventana</button>
+                <button onClick={() => navigate("/Management")} className="btn btn-secondary">Gestionar</button>
               </td>
             </tr>
           ))}
