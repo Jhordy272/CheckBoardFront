@@ -184,7 +184,7 @@ const Projects = () => {
                 <button onClick={() => openModal1(project)} className="btn btn-secondary">Editar</button>
               </td>
               <td>
-                <button onClick={() => navigate("/Management")} className="btn btn-secondary">Gestionar</button>
+                <button onClick={() => navigate("/CheckBoards", { state: { projectId:project.id } })} className="btn btn-secondary">Gestionar</button>
               </td>
             </tr>
           ))}
